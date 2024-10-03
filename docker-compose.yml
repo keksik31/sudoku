@@ -1,0 +1,12 @@
+version: '2'
+services:
+  sudoku-service:
+    image: keksik31/sudoku:latest
+    environment:
+      - "PORT:3000"
+    ports:
+      - "80:3000"
+    volumes:
+      - ./:/app
+
+
